@@ -62,7 +62,7 @@
         default_layer {
             bindings = <
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
-            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
+            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SEMI)
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
                                             &mo LOWER &hm LSHFT SPACE   &hm LSHFT RET &mo RAISE            
             >;
@@ -71,7 +71,7 @@
         gaming_layer {
             bindings = <
             &kp TAB   &kp Q       &kp W      &kp E &kp R        &kp Y      &kp U      &kp I      &kp O      &kp P
-            &kp LCTRL &kp A       &kp S      &kp D &kp F        &kp H      HRMR(J,        K,         L,        SQT)
+            &kp LCTRL &kp A       &kp S      &kp D &kp F        &kp H      HRMR(J,        K,         L,        SEMI)
             &kp LSHFT &kp Z       &kp X      &kp C &kp V        &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
                                             &mo LOWER &kp SPACE   &hm LSHFT RET &mo RAISE            
             >;
