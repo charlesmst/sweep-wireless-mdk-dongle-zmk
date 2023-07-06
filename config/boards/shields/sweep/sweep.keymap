@@ -8,9 +8,10 @@
 #define DEFAU 0
 #define GAMIN 1
 #define LOWER 2
-#define RAISE 3
-#define SUPER 4
-#define TILIN 5
+#define LOWEG 3
+#define RAISE 4
+#define SUPER 5
+#define TILIN 6
 #define HRML(k1,k2,k3,k4) &lt TILIN k1  &hm LCTRL k2  &hm LALT k3  &hm LGUI k4
 #define HRMR(k1,k2,k3,k4) &hm LGUI k1  &hm RALT  k2 &hm RCTRL k3  &lt TILIN k4
 
@@ -20,6 +21,10 @@
         compatible = "zmk,conditional-layers";
         tri_layer {
             if-layers = <LOWER RAISE>;
+            then-layer = <SUPER>;
+        };
+        tri_layer_gaming {
+            if-layers = <LOWEG RAISE>;
             then-layer = <SUPER>;
         };
     };
@@ -79,12 +84,22 @@
 
         right_layer {
             bindings = <
-   &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7    &kp N8    &kp N9    &kp N0   
-   &kp LALT     &kp RCTRL    &kp TAB      &kp ESC    &kp LC(B)      &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp BSPC  
-   &kp LC(Z)    &kp LC(X)    &kp LC(C)    &kp LC(V)    &trans         &kp HOME &kp PG_DN &kp PG_UP &kp END   &kp DEL  
+               &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7    &kp N8    &kp N9    &kp N0   
+               &kp LALT     &kp RCTRL    &kp TAB      &kp ESC      &kp LC(B)      &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp BSPC  
+               &kp LC(Z)    &kp LC(X)    &kp LC(C)    &kp LC(V)    &trans         &kp HOME &kp PG_DN &kp PG_UP &kp END   &kp DEL  
                           	        &trans       &trans       &trans  &trans    
             >;
         };
+
+        right_gaming_layer {
+            bindings = <
+                 &kp GRAVE  &kp N1       &kp N2       &kp N3       &kp N4            &kp N6   &kp N7    &kp N8    &kp N9    &kp N0   
+                 &kp ESC    &trans       &trans       &trans       &kp G             &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp BSPC  
+                 &trans     &trans       &trans       &kp T        &kp B             &tog GAMIN &kp PG_DN &kp PG_UP &kp END   &kp DEL  
+                                                &trans       &trans       &trans  &trans    
+            >;
+        };
+
 
         left_layer {
             bindings = <
