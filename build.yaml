@@ -9,8 +9,12 @@ include:
   - board: nice_nano_v2
     shield: sweep_left
   - board: nice_nano_v2
+    shield: sweep_left_central
+  - board: nice_nano_v2
     shield: sweep_right
   - board: nrf52840_mdk_dongle
     shield: sweep_dongle
   - board: nrf52840_mdk_dongle
     shield: dongle_reset
+  - board: nice_nano_v2
+    shield: settings_reset
