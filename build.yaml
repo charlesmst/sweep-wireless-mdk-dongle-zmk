@@ -1,0 +1,16 @@
+# This file generates the GitHub Actions matrix
+# For simple board + shield combinations, add them
+# to the top level board and shield arrays, for more
+# control, add individual board + shield combinations to
+# the `include` property, e.g:
+#
+---
+include:
+  - board: nice_nano_v2
+    shield: sweep_left
+  - board: nice_nano_v2
+    shield: sweep_right
+  - board: nrf52840_mdk_dongle
+    shield: sweep_dongle
+  - board: nrf52840_mdk_dongle
+    shield: dongle_reset
