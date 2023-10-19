@@ -114,7 +114,7 @@
             bindings = <
      &kp F1       &kp F2       &kp F3        &kp F4        &kp F5         &kp F6     &kp F7     &kp F8     &kp F9       &kp F10      
      &kp F11         &kp F12          &kp LG(LS(N3)) &kp LG(LS(N4)) &kp PSCRN      &kp C_PREV &kp C_PP   &kp C_NEXT &kp C_VOL_DN &kp C_VOL_UP 
-     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &tog GAMIN     &bt OUT_USB       &bt OUT_BLE   &bt BT_CLR    &kp C_MUTE       
+     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &tog GAMIN     &out OUT_USB       &out OUT_BLE   &bt BT_CLR    &kp C_MUTE       
                           	        &trans        &trans       &trans         &trans     
             >;
         };
