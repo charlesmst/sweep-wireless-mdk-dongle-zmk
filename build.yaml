@@ -16,10 +16,10 @@ include:
   #   shield: sweep_dongle
   # - board: nrf52840_mdk_dongle
   #   shield: dongle_reset
-  - board: seeeduino_xiao_ble
-    shield: sweep_dongle
-  - board: seeeduino_xiao_ble
-    shield: dongle_reset
+  # - board: seeeduino_xiao_ble
+  #   shield: sweep_dongle
+  # - board: seeeduino_xiao_ble
+  #   shield: dongle_reset
   # - board: nrf52840dongle_nrf52840
   #   shield: sweep_dongle
   - board: nice_nano_v2
